@@ -1,6 +1,6 @@
 FROM openjdk:8u242-jre
 
-RUN apt-get update && apt-get install -y git python3-pip vim
+RUN apt-get update && apt-get install -y git python3-pip vim openssh-server
 
 RUN git clone https://github.com/py3minepi/py3minepi.git && cd py3minepi && pip3 install --user .
 
