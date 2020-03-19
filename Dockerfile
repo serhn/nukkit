@@ -16,11 +16,12 @@ RUN wget -O /nukkit/plugins/Pokkit-0.9.3.jar  https://github.com/serhn/nukkit/ra
 
 RUN wget -O /nukkit/plugins/Pokkit/bukkitPlugins/raspberryjuice-1.11.pe.jar https://github.com/denisglotov/RaspberryJuice/releases/download/1.11.pe/raspberryjuice-1.11.pe.jar
 
+WORKDIR /nukkit
+
 RUN mkdir /nukkit/lib
 RUN cd /nukkit/lib
 RUN git clone https://github.com/py3minepi/py3minepi.git && cd py3minepi && pip3 install --user .
 
-WORKDIR /nukkit
 
 EXPOSE 19132
 
