@@ -2,8 +2,6 @@ FROM openjdk:8u242-jre
 
 RUN apt-get update && apt-get install -y git python3-pip vim openssh-server
 
-RUN git clone https://github.com/py3minepi/py3minepi.git && cd py3minepi && pip3 install --user .
-
 RUN wget https://ci.nukkitx.com/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar
 
 RUN adduser --home /nukkit --disabled-password --gecos '' nukkit
@@ -17,6 +15,10 @@ RUN mkdir -p /nukkit/plugins/Pokkit/bukkitPlugins/
 RUN wget -O /nukkit/plugins/Pokkit-0.9.3.jar  https://github.com/serhn/nukkit/raw/master/Pokkit-0.9.3.jar
 
 RUN wget -O /nukkit/plugins/Pokkit/bukkitPlugins/raspberryjuice-1.11.pe.jar https://github.com/denisglotov/RaspberryJuice/releases/download/1.11.pe/raspberryjuice-1.11.pe.jar
+
+RUN mkdir /nukkit/lib
+RUN cd /nukkit/lib
+RUN git clone https://github.com/py3minepi/py3minepi.git && cd py3minepi && pip3 install --user .
 
 WORKDIR /nukkit
 
