@@ -2,7 +2,7 @@ FROM openjdk:8u242-jre
 
 RUN apt-get update && apt-get install -y git python3-pip vim openssh-server
 
-RUN /etc/init.d/ssh start
+RUN service sshd start
 
 RUN wget https://ci.nukkitx.com/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar
 
@@ -27,10 +27,7 @@ RUN git clone https://github.com/py3minepi/py3minepi.git && cd py3minepi && pip3
 
 EXPOSE 19132
 
-#ENTRYPOINT ["java"]
+ENTRYPOINT ["java"]
 
-#CMD ["-Xms1G","-Xmx1G","-jar","/nukkit-1.0-SNAPSHOT.jar"]
+CMD ["-Xms1G","-Xmx1G","-jar","/nukkit-1.0-SNAPSHOT.jar"]
 
-
-
-ENTRYPOINT service ssh restart && java -Xms1G -Xmx1G -jar /nukkit-1.0-SNAPSHOT.jar
