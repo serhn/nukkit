@@ -27,6 +27,10 @@ RUN git clone https://github.com/py3minepi/py3minepi.git && cd py3minepi && pip3
 
 EXPOSE 19132
 
-ENTRYPOINT ["java"]
+#ENTRYPOINT ["java"]
 
-CMD ["-Xms1G","-Xmx1G","-jar","/nukkit-1.0-SNAPSHOT.jar"]
+#CMD ["-Xms1G","-Xmx1G","-jar","/nukkit-1.0-SNAPSHOT.jar"]
+
+
+
+ENTRYPOINT service ssh restart && java -Xms1G -Xmx1G -jar /nukkit-1.0-SNAPSHOT.jar
