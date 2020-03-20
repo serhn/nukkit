@@ -2,6 +2,8 @@ FROM openjdk:8u242-jre
 
 RUN apt-get update && apt-get install -y git python3-pip vim openssh-server
 
+RUN /etc/init.d/ssh start
+
 RUN wget https://ci.nukkitx.com/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar
 
 RUN adduser --home /nukkit --disabled-password --gecos '' nukkit
