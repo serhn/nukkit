@@ -56,6 +56,10 @@ chmod +x ./nukkit.sh
 ```
 
 
+##### Links:
+
+https://github.com/zhuowei/RaspberryJuice
+
 https://habr.com/ru/post/472614/
 
 https://nukkitx.com/resources/pokkit.21/
