@@ -2,7 +2,7 @@
 
 
 
-##### Start server select Language
+##### First start server select Language
 
 ```sh
 docker run --name=nukkit \
