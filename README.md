@@ -52,7 +52,7 @@ change YOUR_SSH_PASSWORD
 
 
 
-##### Create, start and restart server
+##### Run, start and restart server
 
 ```sh
 chmod +x ./nukkit.sh
