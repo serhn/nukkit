@@ -1,7 +1,8 @@
 ## Python 3 Coding, Minecraft server pockert edition
 
 
-Start server select Language
+
+##### Start server select Language
 
 ```sh
 docker run --name=nukkit \
@@ -11,21 +12,28 @@ docker run --name=nukkit \
  ```
  
 
-Copy volume
+##### Copy volume
 
 ```sh
 docker cp nukkit:/nukkit ./data
  ```
  
-Delete container
+##### Delete container
  
 ```sh
 docker rm -f nukkit
 ```
 
-Create, restart script
+##### Create, restart script
 
-nukkit.sh
+change YOUR_SSH_PASSWORD
+
+
+create file 
+
+###### ./nukkit.sh
+
+with contents
 
 ```sh
 #/bin/sh
@@ -40,6 +48,11 @@ docker run --name=nukkit \
      serh/nukkit
 docker exec -u 0 nukkit  bash -c '/etc/init.d/ssh start'
 docker exec -u 0 nukkit  bash -c "echo -e \"${PASSWORD}\n${PASSWORD}\" | passwd nukkit"
+```
+
+```sh
+chmod +x ./nukkit.sh
+./nukkit.sh
 ```
 
 
