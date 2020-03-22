@@ -26,9 +26,6 @@ docker rm -f nukkit
 
 ##### Create, restart script
 
-change YOUR_SSH_PASSWORD
-
-
 create file 
 
 ###### ./nukkit.sh
@@ -49,6 +46,13 @@ docker run --name=nukkit \
 docker exec -u 0 nukkit  bash -c '/etc/init.d/ssh start'
 docker exec -u 0 nukkit  bash -c "echo -e \"${PASSWORD}\n${PASSWORD}\" | passwd nukkit"
 ```
+
+
+change YOUR_SSH_PASSWORD
+
+
+
+##### Create, start and restart server
 
 ```sh
 chmod +x ./nukkit.sh
