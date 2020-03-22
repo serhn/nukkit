@@ -1,4 +1,4 @@
-##Python 3 Coding, Minecraft server pockert edition
+## Python 3 Coding, Minecraft server pockert edition
 
 
 Start server select Language
