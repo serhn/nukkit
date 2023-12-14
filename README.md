@@ -70,6 +70,8 @@ https://nukkitx.com/resources/pokkit.21/
 
 https://github.com/denisglotov/RaspberryJuice/releases/tag/1.11.pe
 
+https://github.com/rozukke/ELCI
+
 
 #### For build:
 
