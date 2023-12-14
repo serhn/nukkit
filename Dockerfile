@@ -12,7 +12,9 @@ RUN mkdir -p /nukkit/plugins/Pokkit/bukkitPlugins/
 
 # SRC https://github.com/PetteriM1/Pokkit
 #File download from from browser wget not work  https://nukkitx.com/resources/pokkit.21/download
-RUN wget -O /nukkit/plugins/Pokkit-0.11.1.jar  https://github.com/serhn/nukkit/raw/master/Pokkit-0.11.1.jar
+#RUN wget -O /nukkit/plugins/Pokkit-0.11.1.jar  https://github.com/serhn/nukkit/raw/master/Pokkit-0.11.1.jar
+RUN wget -O /nukkit/plugins/Pokkit-0.9.3.jar  https://github.com/serhn/nukkit/raw/master/Pokkit-0.9.3.jar
+
 
 RUN wget -O /nukkit/plugins/Pokkit/bukkitPlugins/raspberryjuice-1.11.pe.jar https://github.com/denisglotov/RaspberryJuice/releases/download/1.11.pe/raspberryjuice-1.11.pe.jar
 
