@@ -17,7 +17,7 @@ RUN wget -O /nukkit/plugins/Pokkit-0.11.1.jar  https://github.com/serhn/nukkit/r
 
 
 #RUN wget -O /nukkit/plugins/Pokkit/bukkitPlugins/raspberryjuice-1.11.pe.jar https://github.com/denisglotov/RaspberryJuice/releases/download/1.11.pe/raspberryjuice-1.11.pe.jar
-
+RUN wget -O /nukkit/plugins/Pokkit/bukkitPlugins/elci-1.12.1.jar https://github.com/rozukke/ELCI/releases/download/test-release/elci-1.12.1.jar
 
 WORKDIR /nukkit
 
