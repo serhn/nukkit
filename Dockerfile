@@ -1,4 +1,4 @@
-FROM openjdk:8u242-jre
+FROM openjdk:8u342-jre
 
 RUN apt-get update && apt-get install -y git python3-pip vim openssh-server
 
