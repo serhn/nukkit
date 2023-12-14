@@ -73,6 +73,7 @@ https://github.com/denisglotov/RaspberryJuice/releases/tag/1.11.pe
 
 #### For build:
 
+```sh
 docker buildx build --push --platform linux/amd64,linux/arm64 -t serh/nukkit https://raw.githubusercontent.com/serhn/nukkit/master/Dockerfile
-
+```
 
