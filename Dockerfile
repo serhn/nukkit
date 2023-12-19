@@ -24,7 +24,7 @@ WORKDIR /nukkit
 RUN mkdir /nukkit/lib
 RUN cd /nukkit/lib
 #RUN git clone https://github.com/py3minepi/py3minepi.git && cd py3minepi && pip3 install --user .
-RUN git clone https://github.com/rozukke/mcpi-elci.git && cd mcpi-elci && pip3 install --user 
+RUN git clone https://github.com/rozukke/mcpi-elci.git && cd mcpi-elci && pip3 install --user .
 
 EXPOSE 19132
 
